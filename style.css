@@ -24,7 +24,7 @@ nav {
   padding: 20px;
 }
 
-.menu-bar img{
+.menu-bar img {
   width: 35px;
 }
 
@@ -66,19 +66,18 @@ nav {
   font-weight: 500;
 }
 
-button:hover{
+button:hover {
   color: #1a2236;
   border: #ff7a59 solid 1px;
-  background:#fff;
+  background: #fff;
 }
 
 .first-image {
   display: flex;
-  align-items: center;
   flex-direction: column;
   align-items: flex-start;
 }
-  
+
 .first-image img {
   width: 340px;
   margin-top: 60px;
