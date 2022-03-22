@@ -1,4 +1,4 @@
- * {
+* {
   padding: 0;
   box-sizing: border-box;
 }
@@ -123,6 +123,13 @@ button:hover {
   margin-top: -5px;
 }
 
+.skills h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
 .card .content h3 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -226,7 +233,6 @@ button:hover {
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  /* font-weight: 500; */
   font-size: 16px;
   line-height: 24px;
   background-color: #1a2236;
@@ -251,13 +257,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
-
-.skills h3{
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  color: white;
 }
 
 .info {
