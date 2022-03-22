@@ -87,4 +87,90 @@ button:hover {
   grid-template-columns: auto;
 }
 
+.card {
+  background-color: white;
+  border-radius: 5px;
+}
 
+.card .header h2 {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.card .photo img {
+  min-width: 385px;
+}
+
+.card .content {
+  background-color: #1a2236;
+  height: 180px;
+  margin-top: -5px;
+}
+
+.card .content h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  color: white;
+  margin-left: 30px;
+}
+
+.card .content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+.card .content .item1,
+.item2,
+.item3 {
+  background-color: #98dede;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  padding: 7px;
+  width: 70px;
+  margin: auto;
+  color: #1a2236;
+  margin-left: 20px;
+}
+
+.card .content button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #1a2236;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  margin-left: 36px;
+  margin-top: 10px;
+}
+
+.card .content button img {
+  width: 20.57px;
+  height: 15.35px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+}
