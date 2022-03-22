@@ -80,11 +80,6 @@ button:hover {
   height: 190px;
   margin-top: 5%;
 }
-/* Work section css starts from here */
-.grid-container {
-  display: grid;
-  column-gap: 50px;
-  grid-template-columns: auto;
-}
+
 
 
