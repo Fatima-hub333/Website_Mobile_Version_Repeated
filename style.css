@@ -80,6 +80,7 @@ button:hover {
   height: 190px;
   margin-top: 5%;
 }
+
 /* Work section css starts from here */
 .grid-container {
   display: grid;
@@ -92,8 +93,12 @@ button:hover {
   border-radius: 5px;
 }
 
+.info h2 {
+  color: white;
+}
+
 .card .header h2 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
@@ -119,7 +124,7 @@ button:hover {
 }
 
 .card .content h3 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -146,7 +151,7 @@ button:hover {
 .item2,
 .item3 {
   background-color: #98dede;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
@@ -159,15 +164,15 @@ button:hover {
 }
 
 .card .content button {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   background-color: #1a2236;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: #fff;
+  border: 2px solid #fff;
   padding: 10px 20px;
   margin-left: 36px;
   margin-top: 10px;
@@ -190,7 +195,7 @@ button:hover {
 
 /* About_us section start */
 .about {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -199,7 +204,7 @@ button:hover {
 }
 
 .about_para {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -218,8 +223,8 @@ button:hover {
 
 .dwnld_btn {
   display: flex;
-  color: #ffffff;
-  font-family: 'Poppins';
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -247,23 +252,14 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.info h2 {
-  color: white;
-}
-
 .info {
   margin-left: 50px;
   height: 289px;
 }
 
-.info ul {
-  list-style-type: circle;
-  margin-left: 17px;
-}
-
 .info ul li {
   color: white;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -281,4 +277,3 @@ button:hover {
   background-color: #febf52;
   min-width: 100vh;
 }
-
