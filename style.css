@@ -6,6 +6,7 @@
 body {
   background-color: #fdfdfd;
   min-width: 100vw;
+  margin: 0;
 }
 
 .container {
@@ -56,21 +57,27 @@ nav {
 }
 
 .first-btn button {
-  background-color: #1a2236;
+  background-color: #fff;
   width: 310px;
   height: 60px;
   padding: 10px;
-  color: white;
+  color: #1a2236;
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   border: none;
+  border: #1a2236 solid 1px;
 }
 
 button:hover {
-  color: #1a2236;
-  border: #ff7a59 solid 1px;
-  background: #fff;
+  background-color: #1a2236;
+  color: white;
+  border: #fff solid 1px;
+}
+
+button:active {
+  background-color: #1a2236;
+  border: white solid 2px;
 }
 
 .image {
@@ -82,6 +89,10 @@ button:hover {
 }
 
 /* Work section css starts from here */
+.card-container {
+  display: grid;
+}
+
 .grid-container {
   display: grid;
   column-gap: 50px;
@@ -125,6 +136,7 @@ button:hover {
 
 .skills h3 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 800;
   font-size: 20px;
   line-height: 30px;
   color: white;
@@ -246,6 +258,7 @@ button:hover {
 .bg-info {
   background-color: #1c528a;
   margin-top: 50px;
+  min-width: 100vh;
 }
 
 .skills {
