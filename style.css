@@ -79,6 +79,7 @@ button:active {
   width: 100%;
   margin-top: 16px;
 }
+
 /* Work section css starts from here */
 .work_section {
   display: grid;
@@ -194,6 +195,7 @@ h5 {
   line-height: 100%;
   color: #1a2236;
 }
+
 /* About_us section start */
 .about-button {
   display: flex;
@@ -243,12 +245,12 @@ h4 {
 
 .skilss {
   display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 289px);
-    justify-content: center;
-    row-gap: 16px;
-    margin: 16px;
-    list-style: none;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 289px);
+  justify-content: center;
+  row-gap: 16px;
+  margin: 16px;
+  list-style: none;
 }
 
 .languages {
@@ -277,6 +279,7 @@ h4 {
   background-position: bottom right;
   background-repeat: no-repeat;
 }
+
 /* Last form section starts from here */
 form {
   margin-left: 53px;
@@ -364,6 +367,7 @@ textarea:focus {
   justify-content: space-evenly;
   margin-top: 40px;
 }
+
 .footer-container h3 {
   color: #92dcdc;
   font-family: "Poppins", sans-serif;
