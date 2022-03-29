@@ -366,13 +366,13 @@ textarea:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-
 }
 
 .resume:hover {
   background-color: #e5e5e5;
   color: #1a2236;
 }
+
 .downld-img-stng {
   margin-top: -53px;
   margin-left: 41%;
@@ -382,4 +382,3 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
 }
-
