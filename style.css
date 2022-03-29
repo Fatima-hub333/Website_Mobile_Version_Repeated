@@ -1,223 +1,29 @@
 * {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fdfdfd;
-  min-width: 100vw;
-  margin: 0;
+.logo {
+  width: 111px;
+  height: 74px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.menu-bar {
-  padding: 20px;
-}
-
-.menu-bar img {
-  width: 35px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.heading {
-  padding: 20px;
-}
-
-.content h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 57px;
-}
-
-.content .heading p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.first-btn {
-  margin-left: 15px;
-}
-
-.first-btn button {
-  background-color: #fff;
-  width: 288px;
-  height: 44px;
-  color: #1a2236;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  border: none;
-  border: #1a2236 solid 1px;
-}
-
-button:hover {
-  background-color: #1a2236;
-  color: white;
-  border: #fff solid 1px;
-}
-
-button:active {
-  background-color: #1a2236;
-  border: white solid 2px;
-}
-
-button {
-  margin: 20px;
-}
-
-.image {
-  background: url("images/2.png");
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 190px;
-  margin-top: 5%;
-}
-
-/* Work section css starts from here */
-.card-container {
-  display: grid;
-}
-
-.grid-container {
-  display: grid;
-  column-gap: 50px;
-  grid-template-columns: auto;
-}
-
-.card {
-  background-color: white;
-  border-radius: 5px;
-}
-
-.info h2 {
-  color: white;
-}
-
-.card .header h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 100%;
-  margin-bottom: 30px;
-  margin-left: 15px;
-}
-
-.dwnld_btn img {
+.toggle {
   width: 24px;
-  border: 2px solid #fff;
-  box-sizing: border-box;
-  margin-left: 25px;
+  height: 25px;
+  margin-top: 25px;
+  margin-right: 16px;
 }
 
-.card .photo img {
-  min-width: 385px;
-}
-
-.card .content {
-  background-color: #1a2236;
-  height: 180px;
-  margin-top: -5px;
-}
-
-.skills h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 30px;
-  color: white;
-}
-
-.card .content h3 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 80%;
-  color: white;
-  margin-left: 30px;
-}
-
-.info ul {
-  list-style-type: circle;
-  margin: 0;
-  padding: 0;
-}
-
-.card .content ul {
+.menubar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style-type: none;
-  margin-left: 15px;
+  justify-content: space-between;
 }
 
-.card .content .item1,
-.item2,
-.item3 {
-  background-color: #98dede;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10.3334px;
-  line-height: 80%;
-  padding: 7px;
-  width: 70px;
-  margin: auto;
-  color: #1a2236;
-  margin-left: 20px;
-}
-
-.card .content button {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  background-color: #1a2236;
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 10px 20px;
-  margin-left: 36px;
-  margin-top: 10px;
-}
-
-.card .content button img {
-  width: 20.57px;
-  height: 15.35px;
-}
-
-.row {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.column {
-  flex: 1;
-}
-
-/* About_us section start */
-.about {
-  font-family: "Playfair Display", serif;
+h1 {
+  margin: 30px 84px 10px 16px;
+  font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -225,37 +31,193 @@ button {
   color: #1a2236;
 }
 
-.about_para {
+p {
+  margin: 10px 16px 24px 16px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  letter-spacing: -0.01em;
   color: #1a2236;
-  margin-top: 10px;
 }
 
-.about_bg {
-  background-color: #fff;
-}
-
-.about-setngs {
-  padding: 20px;
-}
-
-.dwnld_btn {
+.intro {
   display: flex;
-  color: #fff;
+  flex-direction: column;
+}
+
+.intro-button {
+  cursor: pointer;
+  height: 50px;
+  width: 90%;
+  margin: 16px;
+  padding: 12px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  background-color: #1a2236;
   text-align: center;
-  padding: 7px;
-  width: 288px;
-  margin-top: 20px;
-  padding-left: 60px;
+  color: #fff;
+  background-color: #1a2236;
+  box-shadow: 0 2px #999;
+}
+
+.intro-button:hover {
+  background-color: #fff;
+  color: #1a2236;
+}
+
+button:active {
+  background-color: #fff;
+  box-shadow: 0 2px #999;
+  transform: translateY(5px);
+}
+
+.end-intro-section {
+  width: 100%;
+  margin-top: 16px;
+}
+/* Work section css starts from here */
+.work_section {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(7, auto);
+}
+
+.title {
+  margin: 39.9px 123px 32px 16px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.description img {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  margin: 20px 36px 8px 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  color: #fff;
+}
+
+.languages-1 {
+  display: flex;
+  column-gap: 14px;
+  margin: 8px 50px 10px 20px;
+  list-style: none;
+}
+
+.html,
+.ruby,
+.js {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  text-align: center;
+  color: #1a2236;
+  background-color: #98dede;
+  padding: 6px 10px 6px 10px;
+}
+
+.html {
+  height: 20px;
+  width: 69px;
+}
+
+.ruby {
+  height: 20px;
+  width: 97px;
+}
+
+.js {
+  height: 20px;
+  width: 87px;
+}
+
+.projects_button {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  height: 44px;
+  width: 178px;
+  padding: 10px;
+  margin: 10px 122px 20px 20px;
+  border: 2px solid #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2%;
+  box-shadow: 0 2px;
+  background-color: #1a2236;
+}
+
+.projects_button img {
+  height: 15.35px;
+  width: 20.57px;
+  padding-top: 4px;
+}
+
+.projects_button:hover {
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a2236;
+}
+
+h5 {
+  margin: 30px 84px 10px 16px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+/* About_us section start */
+.about-button {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  cursor: pointer;
+  height: 50px;
+  width: 90%;
+  margin: 16px;
+  padding: 13px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #1a2236;
+  box-shadow: 0 2px #999;
+}
+
+.about-button:hover {
+  background-color: #fff;
+  color: #1a2236;
 }
 
 h4 {
@@ -316,15 +278,8 @@ h4 {
   background-repeat: no-repeat;
 }
 /* Last form section starts from here */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #f9f9fa;
-}
-
 form {
-  margin: 0 auto;
+  margin-left: 53px;
   padding: 1em;
   position: relative;
 }
@@ -334,7 +289,7 @@ input {
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   width: 288px;
-  height: 52px;
+  height: 50px;
 }
 
 input::placeholder {
@@ -393,10 +348,12 @@ textarea:focus {
   min-width: 100vw;
   margin-top: 40px;
   min-height: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 .downld-img-stng {
-  margin-top: -40px;
+  margin-top: -53px;
   margin-left: 41%;
 }
 
@@ -415,4 +372,5 @@ textarea:focus {
   font-size: 16px;
   line-height: 24px;
   margin-left: 16px;
+  margin-top: 10px;
 }
