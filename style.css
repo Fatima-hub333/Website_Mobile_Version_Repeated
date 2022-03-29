@@ -258,6 +258,27 @@ button {
   padding-left: 60px;
 }
 
+h4 {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.list {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: #fff;
+}
+
 .skilss {
   display: grid;
     grid-template-columns: 100%;
