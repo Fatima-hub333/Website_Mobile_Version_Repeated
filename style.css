@@ -282,7 +282,7 @@ h4 {
 
 /* Last form section starts from here */
 form {
-  margin-left: 53px;
+  margin-left: 16px;
   padding: 1em;
   position: relative;
 }
@@ -347,14 +347,32 @@ textarea:focus {
 }
 
 .footer-container {
-  background-color: #1a2236;
-  min-width: 100vw;
-  margin-top: 40px;
-  min-height: 150px;
   display: flex;
   flex-direction: column;
+  row-gap: 31px;
+  background-color: #1a2236;
+  padding: 32px 16px 40px 16px;
 }
 
+.resume {
+  background-color: #1a2236;
+  cursor: pointer;
+  color: #98dcdc;
+  border-style: none;
+  display: flex;
+  column-gap: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+.resume:hover {
+  background-color: #e5e5e5;
+  color: #1a2236;
+}
 .downld-img-stng {
   margin-top: -53px;
   margin-left: 41%;
@@ -362,19 +380,6 @@ textarea:focus {
 
 .icons {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 40px;
+  justify-content: space-between;
 }
 
-.footer-container h3 {
-  color: #92dcdc;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  margin-left: 16px;
-  margin-top: 10px;
-}

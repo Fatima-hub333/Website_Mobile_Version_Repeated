@@ -171,33 +171,32 @@
 <form action="https://formspree.io/f/xoqrnwzb" method="post">
 
   <label for="name">Your name</label>
-  <input type="text" id="name" name="user_name" minlength="6" maxlength="30" placeholder="Fatima"> <br>
+  <input type="text" id="name" name="user_name" minlength="6" maxlength="30" placeholder="Fatima" required> <br>
 
   <label for="mail" class="mail-stng">Your mail</label>
-  <input type="email" id="mail" name="user_mail" placeholder="Fatima@gmail.com"> <br>
+  <input type="email" id="mail" name="user_mail" placeholder="Fatima@gmail.com" required> <br>
 
-  <textarea id="message" minlength="15" maxlength="500"> Add your message here..</textarea>
+  <textarea id="message" minlength="15" maxlength="500" required> Add your message here..</textarea>
 
+   <button type="submit" class="intro-button">Start collaboration</button> 
 </form>
 
-<button type="button" class="intro-button">Start collaboration</button> 
+
 
 <!-- Footer starts -->
 <div class="footer-container">
-  <h3>Get my Resume</h3>
-  <div class="downld-img-stng">
-    <img src="images/Union.png" alt="download">
-  </div>
+  <button type="button" class="resume"> Get my Resume <img src="images/Union.png" alt="Resume"></button>
 
 <!-- Icons -->
-<div class="icons">
-  <img src="images/icon_stackoverflow.svg" alt="stackoverflow">
-  <img src="images/icon_github.svg" alt="github">
-  <img src="images/icon_twitter.svg" alt="twitter">
-  <img src="images/icon_linkedin.svg" alt="linkedin">
-  <img src="images/icon_medium.svg" alt="medium">
-  <img src="images/icon_angellist.svg" alt="anglellist">
-</div>
+<ul class="icons">
+  <li><img src="images/icon_stackoverflow.svg" alt="stackoverflow"></li>
+  <li><img src="images/icon_github.svg" alt="github"></li>
+  <li><img src="images/icon_twitter.svg" alt="twitter"></li>
+  <li><img src="images/icon_linkedin.svg" alt="linkedin"></li>
+  <li><img src="images/icon_medium.svg" alt="medium"></li>
+  <li><img src="images/icon_angellist.svg" alt="anglellist"></li>
+</ul>
+
 </div>
 </section>
 </body>
