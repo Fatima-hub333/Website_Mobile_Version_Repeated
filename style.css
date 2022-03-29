@@ -330,7 +330,7 @@ textarea {
   background-color: #fff;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -345,7 +345,7 @@ label {
   position: absolute;
   padding-top: 5px;
   padding-left: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -369,6 +369,22 @@ textarea:hover {
 input:focus,
 textarea:focus {
   border: 2px solid #1a2236;
+}
+
+.second-btn {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.second-btn button:hover {
+  background-color: #1a2236;
+  color: white;
+  border: #fff solid 1px;
+}
+
+.second-btn button:active {
+  background-color: #1a2236;
+  border: white solid 2px;
 }
 
 .footer-container {
