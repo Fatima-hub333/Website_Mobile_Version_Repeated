@@ -158,14 +158,44 @@ button:active {
   margin-top: 16px;
 }
 
+.desktop_image {
+  display: none;
+}
+
+.name_title {
+  display: none;
+}
+
 /* Sel-Introduction section Responsiveness */
 @media screen and (min-width: 768px) {
 .intro {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 200px;
 }
 
 .end-intro-section {
   display: none;
+}
+
+.desktop_image {
+  display: block;
+  /* width: 100%; */
+  height: auto;
+}
+
+.desktop_image img {
+  width: 100%;
+}
+.name_title {
+  display: block;
+  justify-content: center;
+  padding: 120px;
+  margin: 0px;
+  background-image: url(images/imagedots.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  
 }
 }
 /* Work section css starts from here */
