@@ -163,10 +163,10 @@ button:active {
 }
 
 .name_title {
-  display: none;
+  padding: 20px;
 }
 
-/* Sel-Introduction section Responsiveness */
+/* Self-Introduction section Responsiveness */
 @media screen and (min-width: 768px) {
 .intro {
   display: grid;
@@ -196,6 +196,10 @@ button:active {
   background-position: bottom right;
   background-repeat: no-repeat;
   
+}
+
+p {
+  margin-top: 40px;
 }
 }
 /* Work section css starts from here */
@@ -396,6 +400,56 @@ h4 {
   background-image: url(images/skills.png);
   background-position: bottom right;
   background-repeat: no-repeat;
+}
+
+.dotsquare {
+  display: none;
+}
+
+/* About_us Section Responsiveness */
+@media screen and (min-width: 768px) {
+.about-intro {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 200px;
+}
+
+.about-description {
+  justify-content: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-right: 120px;
+  margin-left: 40px;
+  padding-right: 100px;
+}
+.skilss {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0px;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+
+.list{
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.settings {
+  padding-bottom: 50px;
+
+}
+
+.dotsquare {
+  display: block;
+  background-image: url(images/dotsquare.png);
+  margin-left: 8px;
+  margin-top: 62px;
+  background-repeat: no-repeat;
+}
 }
 
 /* Last form section starts from here */
