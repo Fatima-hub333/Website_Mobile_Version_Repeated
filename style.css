@@ -558,3 +558,13 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
 }
+/* Form SEction Responsiveness */
+@media screen and (min-width: 768px) {
+.form {
+  display: flex;
+}
+
+.logo {
+  display:none;
+}
+}
