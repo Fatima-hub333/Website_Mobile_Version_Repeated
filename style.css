@@ -202,15 +202,15 @@ p {
   margin-top: 40px;
 }
 }
-/* Work section css starts from here */
-.work_section {
+/* Works Section CSS */
+.work-section {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(7, auto);
 }
 
 .title {
-  margin: 39.9px 123px 32px 16px;
+  margin: 24px 123px 32px 16px;
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -232,13 +232,6 @@ h3 {
   font-size: 20px;
   line-height: 80%;
   color: #fff;
-}
-
-.languages-1 {
-  display: flex;
-  column-gap: 14px;
-  margin: 8px 50px 10px 20px;
-  list-style: none;
 }
 
 .html,
@@ -270,10 +263,18 @@ h3 {
   width: 87px;
 }
 
-.projects_button {
+.languages {
+  display: flex;
+  column-gap: 14px;
+  margin: 8px 50px 10px 20px;
+  list-style: none;
+}
+
+.buttonproject {
   display: flex;
   cursor: pointer;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   height: 44px;
   width: 178px;
   padding: 10px;
@@ -291,13 +292,12 @@ h3 {
   background-color: #1a2236;
 }
 
-.projects_button img {
+.buttonproject img {
   height: 15.35px;
   width: 20.57px;
-  padding-top: 4px;
 }
 
-.projects_button:hover {
+.buttonproject:hover {
   background-color: #fff;
   color: #1a2236;
 }
@@ -308,14 +308,210 @@ h3 {
   background-color: #1a2236;
 }
 
-h5 {
-  margin: 30px 84px 10px 16px;
-  font-family: "Playfair Display", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 100%;
-  color: #1a2236;
+/* Works Desktop Section CSS */
+
+@media screen and (min-width: 768px) {
+  .work-section {
+    grid-template-columns: 26.8% 19.8% 16.8% 19.8% 16.8%;
+    grid-template-rows: 32.2% 4.8% 10.6% 10.6% 10.6% 15.6% 15.6%;
+    grid-auto-flow: row;
+    gap: 0 0;
+    height: 1660px;
+  }
+
+  .work-section img {
+    display: none;
+  }
+
+  .buttonproject img {
+    display: block;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .html {
+    width: 132px;
+  }
+
+  .ruby {
+    width: 169px;
+  }
+
+  .js {
+    width: 144px;
+  }
+
+  .html,
+  .ruby,
+  .js {
+    height: 40px;
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .buttonproject {
+    height: 51px;
+    width: 212px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    background-image: url(images/imagedots.svg);
+    background-position: 100% 80%;
+    background-repeat: no-repeat;
+    background-size: 130px;
+    transform: rotate(-90deg);
+    font-size: 110px;
+    margin: 0;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .description.first {
+    grid-area: 1 / 2 / 2 /6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url(images/project1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .projectinfo1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a2236;
+    width: 100%;
+    height: 60%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 6%;
+  }
+
+  .projectinfo1 h3 {
+    font-size: 40px;
+  }
+
+  .description.second {
+    grid-area: 3 / 1 / 5 / 2;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(images/project2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .projectinfo2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a2236;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    padding-left: 2%;
+  }
+
+  .description.third {
+    grid-area: 5 / 1 / 7 / 3;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(images/project3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .projectinfo3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a2236;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    padding-left: 2%;
+  }
+
+  .description.fourth {
+    grid-area: 7 / 3 / 8 / 5;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(images/project4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .projectinfo4 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a2236;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    padding-left: 2%;
+  }
+
+  .description.fifth {
+    grid-area: 4 / 4 / 6 /6;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(images/project5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .projectinfo5 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a2236;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    padding-left: 2%;
+  }
+
+  .description.sixth {
+    grid-area: 2 / 4 / 4 / 6;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(images/project6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .projectinfo6 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a2236;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    padding-left: 2%;
+  }
+
+  .background1 {
+    grid-area: 2 / 2 / 5 / 4;
+    background-image: url(images/background1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .background2 {
+    grid-area: 6 / 3 / 7 / 6;
+    background-image: url(images/background2.1.svg), url(images/background2.2.svg);
+    background-repeat: no-repeat;
+    background-position-x: right, left;
+    background-position-y: top, bottom;
+  }
+
+  .background3 {
+    grid-area: 7 / 1 / 8 / 3;
+    background-image: url(images/background3.svg), url(images/background4.svg);
+    background-repeat: no-repeat;
+    background-position-x: left, right;
+    background-position-y: top;
+  }
 }
 
 /* About_us section start */
@@ -375,7 +571,7 @@ h4 {
   list-style: none;
 }
 
-.languages {
+.languages-1 {
   background-color: #1c528a;
   background-image: url(images/languages1.png);
   background-position: bottom right;
