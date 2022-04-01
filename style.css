@@ -106,6 +106,20 @@ h1 {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
+  animation-duration: 3s;
+  animation-name: scaleandrotate;
+}
+
+@keyframes scaleandrotate {
+  from {
+    transform: scale(1.5);
+    transform: rotateX(360deg);
+  }
+
+  to {
+    transform: scale(1);
+    transform: rotateX(0deg);
+  }
 }
 
 p {
@@ -185,6 +199,11 @@ button:active {
   .desktop_image {
     display: block;
     height: auto;
+    animation: mymove 5s;
+  }
+
+  @keyframes mymove {
+    50% { transform: rotate(180deg); }
   }
 
   .desktop_image img {
@@ -398,6 +417,12 @@ h3 {
     align-items: flex-start;
     justify-content: space-evenly;
     padding-left: 6%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo1:hover {
+    opacity: 1;
   }
 
   .projectinfo1 h3 {
@@ -421,6 +446,12 @@ h3 {
     height: 70%;
     justify-content: space-evenly;
     padding-left: 2%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo2:hover {
+    opacity: 1;
   }
 
   .description.third {
@@ -440,6 +471,12 @@ h3 {
     height: 70%;
     justify-content: space-evenly;
     padding-left: 2%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo3:hover {
+    opacity: 1;
   }
 
   .description.fourth {
@@ -459,6 +496,12 @@ h3 {
     height: 70%;
     justify-content: space-evenly;
     padding-left: 2%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo4:hover {
+    opacity: 1;
   }
 
   .description.fifth {
@@ -478,6 +521,12 @@ h3 {
     height: 70%;
     justify-content: space-evenly;
     padding-left: 2%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo5:hover {
+    opacity: 1;
   }
 
   .description.sixth {
@@ -527,6 +576,7 @@ h3 {
 .about-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 20px;
   cursor: pointer;
   height: 50px;
@@ -620,7 +670,6 @@ h5 {
   display: none;
 }
 
-
 /* About_us Section Responsiveness */
 @media screen and (min-width: 768px) {
   .about-intro {
@@ -681,13 +730,13 @@ h5 {
   .about-button {
     width: 254px;
     height: 50px;
-    background-color: #fff;
-    color: #1a2236;
+    background-color: #1a2236;
+    color: #fff;
   }
 
   .about-button:hover {
-    background-color: #1a2236;
-    color: #fff;
+    background-color: #fff;
+    color: #1a2236;
   }
 }
 
