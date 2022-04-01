@@ -106,7 +106,21 @@ h1 {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-}
+  animation-duration: 3s;
+    animation-name: scaleandrotate;
+  }
+
+  @keyframes scaleandrotate {
+    from {
+      transform: scale(1.5);
+      transform: rotateX(360deg);
+    }
+
+    to {
+      transform: scale(1);
+      transform: rotateX(0deg);
+    }
+  }
 
 p {
   margin: 10px 16px 24px 16px;
@@ -403,8 +417,13 @@ h3 {
     align-items: flex-start;
     justify-content: space-evenly;
     padding-left: 6%;
+    transition: 3s ease-in-out;
+    opacity: 0;
   }
 
+  .projectinfo1:hover {
+  opacity: 1;
+  }
   .projectinfo1 h3 {
     font-size: 40px;
   }
@@ -426,6 +445,12 @@ h3 {
     height: 70%;
     justify-content: space-evenly;
     padding-left: 2%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo2:hover {
+  opacity: 1;
   }
 
   .description.third {
@@ -445,6 +470,12 @@ h3 {
     height: 70%;
     justify-content: space-evenly;
     padding-left: 2%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo3:hover {
+  opacity: 1;
   }
 
   .description.fourth {
@@ -464,6 +495,12 @@ h3 {
     height: 70%;
     justify-content: space-evenly;
     padding-left: 2%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo4:hover {
+  opacity: 1;
   }
 
   .description.fifth {
@@ -483,6 +520,12 @@ h3 {
     height: 70%;
     justify-content: space-evenly;
     padding-left: 2%;
+    transition: 3s ease-in-out;
+    opacity: 0;
+  }
+
+  .projectinfo5:hover {
+  opacity: 1;
   }
 
   .description.sixth {
