@@ -177,6 +177,7 @@ button:active {
   h1 {
     font-size: 110px;
   }
+
   .end-intro-section {
     display: none;
   }
@@ -540,7 +541,7 @@ h3 {
   line-height: 25px;
   text-align: center;
   color: #fff;
-  background-color: #1a2236;  
+  background-color: #1a2236;
 }
 
 .about-button:hover {
@@ -671,17 +672,17 @@ h4 {
     background-repeat: no-repeat;
   }
 
-.about-button {
-  width: 254px;
-  height: 50px;
-  background-color: #fff;
-  color: #1a2236
-}
+  .about-button {
+    width: 254px;
+    height: 50px;
+    background-color: #fff;
+    color: #1a2236;
+  }
 
-.about-button:hover {
-  background-color: #1a2236;
-  color: #fff;
-}
+  .about-button:hover {
+    background-color: #1a2236;
+    color: #fff;
+  }
 }
 
 /* Last form section starts from here */
