@@ -185,7 +185,12 @@ button:active {
   .desktop_image {
     display: block;
     height: auto;
+    animation: mymove 5s;
   }
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
 
   .desktop_image img {
     width: 100%;
@@ -527,6 +532,7 @@ h3 {
 .about-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 20px;
   cursor: pointer;
   height: 50px;
@@ -681,13 +687,13 @@ h5 {
   .about-button {
     width: 254px;
     height: 50px;
-    background-color: #fff;
-    color: #1a2236;
+    background-color: #1a2236;
+    color: #fff;
   }
 
   .about-button:hover {
-    background-color: #1a2236;
-    color: #fff;
+    background-color: #fff;
+    color: #1a2236;
   }
 }
 
