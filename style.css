@@ -174,14 +174,15 @@ button:active {
     margin-bottom: 200px;
   }
 
+  h1 {
+    font-size: 110px;
+  }
   .end-intro-section {
     display: none;
   }
 
   .desktop_image {
     display: block;
-
-    /* width: 100%; */
     height: auto;
   }
 
@@ -201,6 +202,11 @@ button:active {
 
   p {
     margin-top: 40px;
+  }
+
+  .intro-button {
+    width: 254px;
+    height: 50px;
   }
 }
 
@@ -423,6 +429,7 @@ h3 {
     background-image: url(images/project3.png);
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: -115px;
   }
 
   .projectinfo3 {
@@ -533,8 +540,7 @@ h3 {
   line-height: 25px;
   text-align: center;
   color: #fff;
-  background-color: #1a2236;
-  box-shadow: 0 2px #999;
+  background-color: #1a2236;  
 }
 
 .about-button:hover {
@@ -604,6 +610,22 @@ h4 {
   display: none;
 }
 
+.projectinfo2 {
+  display: none;
+}
+
+.projectinfo3 {
+  display: none;
+}
+
+.projectinfo4 {
+  display: none;
+}
+
+.projectinfo5 {
+  display: none;
+}
+
 /* About_us Section Responsiveness */
 @media screen and (min-width: 768px) {
   .about-intro {
@@ -648,15 +670,27 @@ h4 {
     margin-top: 62px;
     background-repeat: no-repeat;
   }
+
+.about-button {
+  width: 254px;
+  height: 50px;
+  background-color: #fff;
+  color: #1a2236
+}
+
+.about-button:hover {
+  background-color: #1a2236;
+  color: #fff;
+}
 }
 
 /* Last form section starts from here */
 .form {
   margin-top: 34px;
+  background-color: #f9f9fa;
 }
 
 .contact-form {
-  background-color: #f9f9fa;
   margin-left: 18px;
   margin-right: 14px;
   list-style-type: none;
