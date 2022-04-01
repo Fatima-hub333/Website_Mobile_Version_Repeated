@@ -430,7 +430,6 @@ h3 {
     background-image: url(images/project3.png);
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -115px;
   }
 
   .projectinfo3 {
@@ -560,6 +559,16 @@ h4 {
   color: #fff;
 }
 
+h5 {
+  margin: 30px 84px 10px 16px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
 .list {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -611,21 +620,6 @@ h4 {
   display: none;
 }
 
-.projectinfo2 {
-  display: none;
-}
-
-.projectinfo3 {
-  display: none;
-}
-
-.projectinfo4 {
-  display: none;
-}
-
-.projectinfo5 {
-  display: none;
-}
 
 /* About_us Section Responsiveness */
 @media screen and (min-width: 768px) {
@@ -636,12 +630,24 @@ h4 {
   }
 
   .about-description {
+    display: block;
     justify-content: center;
     grid-column-start: 2;
     grid-column-end: 3;
     margin-right: 120px;
     margin-left: 40px;
     padding-right: 100px;
+  }
+
+  p {
+    margin: 10px 16px 24px 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
   }
 
   .skilss {
