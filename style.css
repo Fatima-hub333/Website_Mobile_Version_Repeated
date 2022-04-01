@@ -107,20 +107,20 @@ h1 {
   line-height: 100%;
   color: #1a2236;
   animation-duration: 3s;
-    animation-name: scaleandrotate;
+  animation-name: scaleandrotate;
+}
+
+@keyframes scaleandrotate {
+  from {
+    transform: scale(1.5);
+    transform: rotateX(360deg);
   }
 
-  @keyframes scaleandrotate {
-    from {
-      transform: scale(1.5);
-      transform: rotateX(360deg);
-    }
-
-    to {
-      transform: scale(1);
-      transform: rotateX(0deg);
-    }
+  to {
+    transform: scale(1);
+    transform: rotateX(0deg);
   }
+}
 
 p {
   margin: 10px 16px 24px 16px;
@@ -202,9 +202,9 @@ button:active {
     animation: mymove 5s;
   }
 
-@keyframes mymove {
-  50% {transform: rotate(180deg);}
-}
+  @keyframes mymove {
+    50% { transform: rotate(180deg); }
+  }
 
   .desktop_image img {
     width: 100%;
@@ -422,8 +422,9 @@ h3 {
   }
 
   .projectinfo1:hover {
-  opacity: 1;
+    opacity: 1;
   }
+
   .projectinfo1 h3 {
     font-size: 40px;
   }
@@ -450,7 +451,7 @@ h3 {
   }
 
   .projectinfo2:hover {
-  opacity: 1;
+    opacity: 1;
   }
 
   .description.third {
@@ -475,7 +476,7 @@ h3 {
   }
 
   .projectinfo3:hover {
-  opacity: 1;
+    opacity: 1;
   }
 
   .description.fourth {
@@ -500,7 +501,7 @@ h3 {
   }
 
   .projectinfo4:hover {
-  opacity: 1;
+    opacity: 1;
   }
 
   .description.fifth {
@@ -525,7 +526,7 @@ h3 {
   }
 
   .projectinfo5:hover {
-  opacity: 1;
+    opacity: 1;
   }
 
   .description.sixth {
@@ -668,7 +669,6 @@ h5 {
 .dotsquare {
   display: none;
 }
-
 
 /* About_us Section Responsiveness */
 @media screen and (min-width: 768px) {
