@@ -7,6 +7,8 @@
 
 Website containing the most complex projects I have worked on recently. Built with Html, & CSS.
 
+![screenshot](images/Microverse_portfolio.png)
+
 ## [LiveDemo] 
 (https://fatima-hub333.github.io/Website_Mobile_Version_Repeated/)
 
