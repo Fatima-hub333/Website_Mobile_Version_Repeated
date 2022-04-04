@@ -5,7 +5,7 @@
 > Portfolio: setup and mobile version skeleton.
 
 
-Website containing the most complex projects I have worked on recently. Built with Html, & CSS.
+Website containing the most complex concepts of Flex-Model & CSS Grid. I have worked on. Built with Html & CSS.
 
 ![screenshot](images/Microverse_portfolio.png)
 
