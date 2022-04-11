@@ -37,13 +37,13 @@
   display: none;
 }
 
-.cross{
+.cross {
   width: 16px;
   height: 16px;
   margin-right: 24px;
 }
 
-.mobile_menu_JS{
+.mobile_menu_JS {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,8 +84,8 @@
 .img-3 {
   display: flex;
   justify-content: space-around;
-
 }
+
 /* Navbar Responsiveness */
 @media screen and (min-width: 768px) {
   .toggle {
