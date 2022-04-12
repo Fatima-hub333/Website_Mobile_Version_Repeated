@@ -37,14 +37,41 @@
 <header>
   <nav class="menubar">
     <a href="index.html"> <img class="logo" src="images/1.png" alt="Website_logo"></a>
-    <img class="toggle" src="images/icons8-menu-.png" alt="Toggle">
-    <div class="menu">
-      <ul class="menu_items">
+    <img class="toggle" id="hamburger" src="images/icons8-menu-.png" alt="Toggle">
+    <div class="menu mobile_menu">
+      <div class="mobile_menu_JS">
+        <img class="mobile_menu_img" src="images/mobile-menu-image1.png" alt="Website_logo">
+        <img class="cross" src="images/mobile_menu_cross.png" alt="Cross">
+      </div>
+    
+      <div class="img-1">
+        <img src="images/mobile-menu-image2.png" alt="Dotts">
+      </div>
+      <div class="menu_mobile">
+        <ul class="menu_items">
+          <li> <a href="#home">Home</a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#portfolio">Portfolio</a></li>
+          <li> <a href="#vontact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="img-2">
+        <img src="images/mobile-menu-image2.png" alt="dotts">
+      </div>
+      
+      <div class="img-3">
+        <img src="images/Mask_Group.png" alt="Logo-end">
+      </div>
+      
+
+
+      <!-- <ul class="menu_items">
         <li> <a href="#">Home</a></li>
         <li> <a href="#">About</a></li>
         <li> <a href="#">Portfolio</a></li>
         <li> <a href="#">Contact</a></li>
-      </ul>
+      </ul> -->
     </div>
   </nav>
 </header>
@@ -66,7 +93,7 @@
 <img class="end-intro-section" src="images/2.png" alt="Design">
 
 <!-- Work Section -->
-<section class="work-section">
+<section class="work-section" id="portfolio">
   <h2 class="title">Projects</h2>
   <div class="description first">
     <img src="images/proj1.png" alt="Shopping Website">
@@ -149,7 +176,7 @@
 </section>
 
 <!-- About US section -->
-  <section class="intro about-intro">
+  <section class="intro about-intro" id="about">
     <section class="about-description">
     <h5>About</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
@@ -202,7 +229,7 @@
 
 <!-- Form Start -->
 <form action="https://formspree.io/f/xoqrnwzb" method="post">
-<ul class="contact-form">
+<ul class="contact-form" >
   <li class="name_field">
   <label for="name">Your name</label>
   <input type="text" id="name" name="user_name" minlength="6" maxlength="30" placeholder="Fatima" required> <br>
@@ -239,5 +266,6 @@
 
 </footer>
 
+<script src="./js/script.js"></script>
 </body>
 </html>
