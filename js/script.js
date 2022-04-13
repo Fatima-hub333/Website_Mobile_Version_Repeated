@@ -1,3 +1,6 @@
+import projectdata from "./projectdata.js";
+ 
+const dataProjects = projectdata();
 const hamBurger = document.getElementById('hamburger');
 const menu = document.querySelector('.menu');
 const exitBtn = document.getElementById('exitbtn');
@@ -29,7 +32,7 @@ const buttonsProject = document.getElementsByClassName('buttonproject');
 const popupExitButton = document.getElementById('popup-exitbtn');
 const backGround = document.getElementById('popup-background');
 
-for (let i = 0; i < buttonsProject.length; i += 1) {
+for (let i = 0; i < buttonsProject.length; i += 1) { 
   buttonsProject[i].addEventListener('click', () => {
     const language = () => {
       let str = '';
@@ -49,11 +52,15 @@ for (let i = 0; i < buttonsProject.length; i += 1) {
     document.getElementById('languages').innerHTML = language();
     document.getElementById('main-img').src = dataProjects[i].imgShow[0];
     document.getElementById('text').innerHTML = dataProjects[i].pText;
-    document.getElementById('miniatures').innerHTML = showImg();
+    document.getElementById('project-images').innerHTML = showImg();
     document.getElementById('live').href = dataProjects[i].liveUrl;
     document.getElementById('source').href = dataProjects[i].sourceUrl;
     popupWindow.style.top = `${window.scrollY}px`;
     popupWindow.style.display = 'flex';
     backGround.style.display = 'block';
+  });
+
+  popupExitButton.addEventListener('click', () => {
+    popupWindow.style.display = 'none';
   });
 }
