@@ -6,174 +6,189 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ <!-- Google fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-  <!-- Playfair display font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+ <!-- Playfair display font link -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
-  <!-- ppppins medium font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+ <!-- ppppins medium font link -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
-  <!-- Poppins extra bold font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+ <!-- Poppins extra bold font link -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
 
-  <!-- Custom stylesheet link -->
-  <link rel="stylesheet" href="style.css">
+ <!-- Custom stylesheet link -->
+ <link rel="stylesheet" href="style.css">
 
-  <!-- Title of document  -->
-  <title>Portfolio Website Mobile Version</title>
+ <!-- Title of document  -->
+ <title>Portfolio Website Mobile Version</title>
 </head>
 
 <body>
 <header>
-  <nav class="menubar">
-    <a href="index.html"> <img class="logo" src="images/1.png" alt="Website_logo"></a>
-    <img class="toggle" id="hamburger" src="images/icons8-menu-.png" alt="Toggle">
-    <div class="menu mobile_menu">
-      <div class="mobile_menu_JS">
-        <img class="mobile_menu_img" src="images/mobile-menu-image1.png" alt="Website_logo">
-        <img class="cross" src="images/mobile_menu_cross.png" alt="Cross">
-      </div>
-    
-      <div class="img-1">
-        <img src="images/mobile-menu-image2.png" alt="Dotts">
-      </div>
-      <div class="menu_mobile">
-        <ul class="menu_items">
-          <li> <a href="#home">Home</a></li>
-          <li> <a href="#about">About</a></li>
-          <li> <a href="#portfolio">Portfolio</a></li>
-          <li> <a href="#vontact">Contact</a></li>
-        </ul>
-      </div>
+ <nav>
+   <div class="mob_ver_menubar">
+   <img class="logo" src="images/1.png" alt="Website_logo_mv">
+   <img class="toggle" id="hamburger" src="images/icons8-menu-.png" alt="Toggle">
+   </div>
+   <ul class="desktop-menu">
+     <li><a href="#home">Home</a></li>
+     <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#contact">Contact</a></li>
+   </ul>
 
-      <div class="img-2">
-        <img src="images/mobile-menu-image2.png" alt="dotts">
-      </div>
-      
-      <div class="img-3">
-        <img src="images/Mask_Group.png" alt="Logo-end">
-      </div>
-      
-
-
-      <!-- <ul class="menu_items">
-        <li> <a href="#">Home</a></li>
-        <li> <a href="#">About</a></li>
-        <li> <a href="#">Portfolio</a></li>
-        <li> <a href="#">Contact</a></li>
-      </ul> -->
-    </div>
-  </nav>
+   <!-- display menu with JavaScript -->
+   <div class="menu">
+     <div class="closebtn">
+       <img id="exitbtn" src="images/mobile_menu_cross.png" alt="close">
+     </div>
+   <ul id="display_menu_Js">
+     <li><a href="#home">Home</a></li>
+     <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#contact">Contact</a></li>
+   </ul>
+   </div>
+ </nav>
 </header>
 
-<!-- Self Introduction Section -->
-<section class="intro">
-  <section class="name_title">
-  <h1>Fatima Zahir</h1>
-  <p>I am a Software Engineer, Professional Web Developer & Social Media Manager. I have developed a number of websites. I am an expert in HTML, CSS, JS, Ruby on Rails, PHP, jquery, MySQL. I can develop and design any type of website and fix errors.</p>
-  <button type="button" class="intro-button">Start collaboration</button> 
+<!-- Introduction Section -->
+<section class="intro" id="home">
+ <div class="name_title">
+ <h1>Fatima Zahir</h1>
+ <p>I am a Software Engineer, Professional Web Developer & Social Media Manager. I have developed a number of websites. I am an expert in HTML, CSS, JS, Ruby on Rails, PHP, jquery, MySQL. I can develop and design any type of website and fix errors.</p>
+ <button type="button" class="intro-button">Start collaboration</button> 
+ </div>
+ <section class="desktop_image">
+   <img src="images/content-img.png" alt="Content Image">
+ </section> 
 </section>
-
-  <section class="desktop_image">
-    <img src="images/content-img.png" alt="Content Image">
-  </section> 
-
-</section>
-
 <img class="end-intro-section" src="images/2.png" alt="Design">
 
 <!-- Work Section -->
 <section class="work-section" id="portfolio">
-  <h2 class="title">Projects</h2>
-  <div class="description first">
-    <img src="images/proj1.png" alt="Shopping Website">
-    <div class="projectinfo1">
-      <h3 class="projectname">BAKSH INTERNATIONAL</h3>
-      <ul class="languages">
-        <li class="html">HTML/CSS</li>
-        <li class="ruby">PHP & MYSQL</li>
-        <li class="js">JavaScript</li>
-      </ul>
-      <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
-    </div>
-  </div>
+ <h2 class="title">Projects</h2>
+ <div class="description first">
+   <img src="images/proj1.png" alt="Shopping Website">
+   <div class="projectinfo1">
+     <h3 class="projectname">BAKSH INTERNATIONAL</h3>
+     <ul class="languages">
+       <li class="html">HTML/CSS</li>
+       <li class="ruby">PHP & MYSQL</li>
+       <li class="js">JavaScript</li>
+     </ul>
+     <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
+   </div>
+ </div>
 
-  <div class="description second"> 
-    <img src="images/proj2.png" alt="Web Designing">
-    <div class="projectinfo2">
-      <h3 class="projectname">Project name goes here</h3>
-      <ul class="languages">
-        <li class="html">HTML/CSS</li>
-        <li class="ruby">Ruby on Rails</li>
-        <li class="js">JavaScript</li>
-      </ul>
-      <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
-    </div>
-  </div>
-  <div class="description third"> 
-    <img src="images/proj3.png" alt="E-commerce website">
-    <div class="projectinfo3">
-      <h3 class="projectname">Project name goes here</h3>
-      <ul class="languages">
-        <li class="html">HTML/CSS</li>
-        <li class="ruby">Ruby on Rails</li>
-        <li class="js">JavaScript</li>
-      </ul>
-      <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
-    </div>
-  </div>
+ <div class="description second"> 
+   <img src="images/proj2.png" alt="Web Designing">
+   <div class="projectinfo2">
+     <h3 class="projectname">Project name goes here</h3>
+     <ul class="languages">
+       <li class="html">HTML/CSS</li>
+       <li class="ruby">Ruby on Rails</li>
+       <li class="js">JavaScript</li>
+     </ul>
+     <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
+   </div>
+ </div>
+ <div class="description third"> 
+   <img src="images/proj3.png" alt="E-commerce website">
+   <div class="projectinfo3">
+     <h3 class="projectname">Project name goes here</h3>
+     <ul class="languages">
+       <li class="html">HTML/CSS</li>
+       <li class="ruby">Ruby on Rails</li>
+       <li class="js">JavaScript</li>
+     </ul>
+     <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
+   </div>
+ </div>
 
-  <div class="description fourth"> 
-    <img src="images/proj4.png" alt="Marketing">
-    <div class="projectinfo4">
-      <h3 class="projectname">Project name goes here</h3>
-      <ul class="languages">
-        <li class="html">HTML/CSS</li>
-        <li class="ruby">Ruby on Rails</li>
-        <li class="js">JavaScript</li>
-      </ul>
-      <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
-    </div>
-  </div>
+ <div class="description fourth"> 
+   <img src="images/proj4.png" alt="Marketing">
+   <div class="projectinfo4">
+     <h3 class="projectname">Project name goes here</h3>
+     <ul class="languages">
+       <li class="html">HTML/CSS</li>
+       <li class="ruby">Ruby on Rails</li>
+       <li class="js">JavaScript</li>
+     </ul>
+     <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
+   </div>
+ </div>
 
-  <div class="description fifth"> 
-    <img src="images/proj5.png" alt="Agency">
-    <div class="projectinfo5">
-      <h3 class="projectname">Project name goes here</h3>
-      <ul class="languages">
-        <li class="html">HTML/CSS</li>
-        <li class="ruby">Ruby on Rails</li>
-        <li class="js">JavaScript</li>
-      </ul>
-      <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
-    </div>
-  </div>
-  <div class="description sixth">
-    <img src="images/proj6.png" alt="PPC">
-    <div class="projectinfo6">
-      <h3 class="projectname">Project name goes here</h3>
-      <ul class="languages">
-        <li class="html">HTML/CSS</li>
-        <li class="ruby">Ruby on Rails</li>
-        <li class="js">JavaScript</li>
-      </ul>
-      <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
-    </div>
-  </div>
-  <div class="background1"></div>
-  <div class="background2"></div>
-  <div class="background3"></div>
+ <div class="description fifth"> 
+   <img src="images/proj5.png" alt="Agency">
+   <div class="projectinfo5">
+     <h3 class="projectname">Project name goes here</h3>
+     <ul class="languages">
+       <li class="html">HTML/CSS</li>
+       <li class="ruby">Ruby on Rails</li>
+       <li class="js">JavaScript</li>
+     </ul>
+     <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
+   </div>
+ </div>
+ <div class="description sixth">
+   <img src="images/proj6.png" alt="PPC">
+   <div class="projectinfo6">
+     <h3 class="projectname">Project name goes here</h3>
+     <ul class="languages">
+       <li class="html">HTML/CSS</li>
+       <li class="ruby">Ruby on Rails</li>
+       <li class="js">JavaScript</li>
+     </ul>
+     <button type="button" class="buttonproject">See this Project<img src="images/arrow.png" alt="ARROW"></button>
+   </div>
+ </div>
+ <div class="background1"></div>
+ <div class="background2"></div>
+ <div class="background3"></div>
 </section>
+
+<!-- Window Popup JavaScript -->
+<section class="popup-window" id="popup-window">
+ <div class="closebtn">
+   <img id="popup-exitbtn" class="exit" src="images/mobile_menu_cross.png" alt="close">
+ </div>
+<h2 id="popup-title">
+</h2>
+
+<ul class="languages" id="languages">
+</ul>
+<div class="popup-images">
+ <div class="showimg">
+   <img class="prev" src="images/previousp.png" alt="Arrow">
+   <img class="image" src="images/proj1.png" alt="Project-01">
+   <img class="next" src="images/nextp.png" alt="Project-02">
+ </div>
+
+ <div id="main-img">
+
+ </div>
+<div class="project-images" id="project-images">
+</div>
+</div>
+<p id="text"></p>
+
+<div class="button-container">
+ <button type="button" class="button-pop" id="live">See live <img src="images/arrow.png" alt="arrow"></button>
+ <button type="button" class="button-pop" id="source">See source <img src="images/icon_github.svg" alt="arrow"></button>
+</div>
+</section>
+<div id="popup-background"></div>
 
 <!-- About US section -->
   <section class="intro about-intro" id="about">
