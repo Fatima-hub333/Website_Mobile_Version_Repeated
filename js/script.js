@@ -40,16 +40,19 @@ for (let i = 0; i < buttonsProject.length; i += 1) {
       }
       return str;
     };
+    let mainImg = null;
+    let rest = null;
+    [mainImg, ...rest] = dataProjects[i].imgShow;
     const showImg = () => {
-      let str = '';
-      for (let j = 0; j < dataProjects[i].imgShow.length; j += 1) {
-        str += `<img src="${dataProjects[i].imgShow[j]}" alt="PROJECT">`;
+      let str = `<img src="${mainImg}" alt="PROJECT">`;
+      for (let j = 0; j < rest.length; j += 1) {
+        str += `<img src="${rest[j]}" alt="PROJECT">`;
       }
       return str;
     };
     document.getElementById('popup-title').innerHTML = dataProjects[i].projectTitle;
     document.getElementById('languages').innerHTML = language();
-    document.getElementById('main-img').src = dataProjects[i].imgShow[0];
+    document.getElementById('main-img').src = mainImg;
     document.getElementById('text').innerHTML = dataProjects[i].pText;
     document.getElementById('project-images').innerHTML = showImg();
     document.getElementById('live').href = dataProjects[i].liveUrl;
