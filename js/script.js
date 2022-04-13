@@ -1,22 +1,16 @@
-import projectdata from './projectdata.js';
+import dataProjects from './projectdata.js';
 
-const dataProjects = projectdata();
-const hamBurger = document.getElementById('hamburger');
-const menu = document.querySelector('.menu');
+const btnMenu = document.getElementById('btnmenu');
+const menu = document.getElementById('menu');
 const exitBtn = document.getElementById('exitbtn');
-const menuElements = document.querySelectorAll('#display_menu_Js a');
-const logo = document.querySelector('.logo');
+const menuElements = document.querySelectorAll('#mobile-menu a');
 
-hamBurger.addEventListener('click', () => {
-  hamBurger.style.display = 'none';
-  logo.style.display = 'none';
-  menu.style.display = 'block';
+btnMenu.addEventListener('click', () => {
+  menu.style.display = 'flex';
 });
 
 exitBtn.addEventListener('click', () => {
   menu.style.display = 'none';
-  hamBurger.style.display = 'block';
-  logo.style.display = 'block';
 });
 
 for (let i = 0; i < menuElements.length; i += 1) {
@@ -25,11 +19,44 @@ for (let i = 0; i < menuElements.length; i += 1) {
   });
 }
 
-// Popup window JS
 const popupWindow = document.getElementById('popup-window');
 const buttonsProject = document.getElementsByClassName('buttonproject');
 const popupExitButton = document.getElementById('popup-exitbtn');
 const backGround = document.getElementById('popup-background');
+
+const works = document.getElementById('portfolio');
+const printWorks = () => {
+  let str = '';
+  const srtProject = ['a', 'b', 'c', 'd', 'e', 'f'];
+  for (let i = 0; i < dataProjects.length; i += 1) {
+    const [a] = dataProjects[i].imgShow;
+    const language = () => {
+      let str = '';
+      for (let j = 0; j < dataProjects[i].popupLanguages.length; j += 1) {
+        str += `<li class="tags">${dataProjects[i].popupLanguages[j]}</li>`;
+      }
+      return str;
+    };
+    str += `<div class="projectdescription ${srtProject[i]}">
+    <img src="${a}" alt="PROJECT${i + 1}">
+    <div class="projectinfo${i + 1}">
+      <h2 class="projectname">${dataProjects[i].projectTitle}</h2>
+      <ul class="languages">
+      ${language()}
+      </ul>
+      <button type="button" class="buttonproject">See this Project<img src="img/rightarrow.png" alt="ARROW"></button>
+    </div>
+  </div>`;
+  }
+  return str;
+};
+
+works.innerHTML = `
+<h1 class="projecttitle">Projects</h1>
+${printWorks()}
+<div class="background1"></div>
+<div class="background2"></div>
+<div class="background3"></div>`;
 
 for (let i = 0; i < buttonsProject.length; i += 1) {
   buttonsProject[i].addEventListener('click', () => {
@@ -40,29 +67,28 @@ for (let i = 0; i < buttonsProject.length; i += 1) {
       }
       return str;
     };
-    let mainImg = null;
-    let rest = null;
-    [mainImg, ...rest] = dataProjects[i].imgShow;
     const showImg = () => {
-      let str = `<img src="${mainImg}" alt="PROJECT">`;
-      for (let j = 0; j < rest.length; j += 1) {
-        str += `<img src="${rest[j]}" alt="PROJECT">`;
+      let str = '';
+      for (let j = 0; j < dataProjects[i].imgShow.length; j += 1) {
+        str += `<img src="${dataProjects[i].imgShow[j]}" alt="PROJECT">`;
       }
       return str;
     };
+    const [a] = dataProjects[i].imgShow;
     document.getElementById('popup-title').innerHTML = dataProjects[i].projectTitle;
     document.getElementById('languages').innerHTML = language();
-    document.getElementById('main-img').src = mainImg;
+    document.getElementById('main-img').src = a;
     document.getElementById('text').innerHTML = dataProjects[i].pText;
-    document.getElementById('project-images').innerHTML = showImg();
+    document.getElementById('miniatures').innerHTML = showImg();
     document.getElementById('live').href = dataProjects[i].liveUrl;
     document.getElementById('source').href = dataProjects[i].sourceUrl;
     popupWindow.style.top = `${window.scrollY}px`;
     popupWindow.style.display = 'flex';
     backGround.style.display = 'block';
   });
-
-  popupExitButton.addEventListener('click', () => {
-    popupWindow.style.display = 'none';
-  });
 }
+
+popupExitButton.addEventListener('click', () => {
+  popupWindow.style.display = 'none';
+  backGround.style.display = 'none';
+});
