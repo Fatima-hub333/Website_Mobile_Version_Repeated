@@ -1,5 +1,5 @@
-import projectdata from "./projectdata.js";
- 
+import projectdata from './projectdata.js';
+
 const dataProjects = projectdata();
 const hamBurger = document.getElementById('hamburger');
 const menu = document.querySelector('.menu');
@@ -8,23 +8,22 @@ const menuElements = document.querySelectorAll('#display_menu_Js a');
 const logo = document.querySelector('.logo');
 
 hamBurger.addEventListener('click', () => {
-  hamburger.style.display = "none"
-  logo.style.display = "none"
-  menu.style.display = "block"
+  hamBurger.style.display = 'none';
+  logo.style.display = 'none';
+  menu.style.display = 'block';
 });
 
 exitBtn.addEventListener('click', () => {
   menu.style.display = 'none';
-  hamburger.style.display = "block"
-  logo.style.display = "block"
+  hamBurger.style.display = 'block';
+  logo.style.display = 'block';
 });
 
-for (let i = 0; i < menuElements.length; i++ ) {
+for (let i = 0; i < menuElements.length; i += 1) {
   menuElements[i].addEventListener('click', () => {
     menu.style.display = 'none';
   });
 }
-
 
 // Popup window JS
 const popupWindow = document.getElementById('popup-window');
@@ -32,7 +31,7 @@ const buttonsProject = document.getElementsByClassName('buttonproject');
 const popupExitButton = document.getElementById('popup-exitbtn');
 const backGround = document.getElementById('popup-background');
 
-for (let i = 0; i < buttonsProject.length; i += 1) { 
+for (let i = 0; i < buttonsProject.length; i += 1) {
   buttonsProject[i].addEventListener('click', () => {
     const language = () => {
       let str = '';
