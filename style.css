@@ -334,7 +334,7 @@ h3 {
 .languages {
   display: flex;
   column-gap: 14px;
-  margin: 8px 50px 10px 20px;
+  margin: 40px 50px 10px 20px;
   list-style: none;
 }
 
@@ -722,6 +722,22 @@ h3 {
 
 /* Desktop popup */
 @media screen and (min-width: 768px) {
+  #popup-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #1a2236;
+    opacity: 0.9;
+    z-index: 5;
+  }
+
+  .popup-window {
+    margin: 70px;
+    z-index: 10;
+  }
+
   .popup-window h2 {
     font-size: 60px;
   }
