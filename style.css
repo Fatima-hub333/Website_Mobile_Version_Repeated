@@ -220,7 +220,7 @@ button:active {
   .headline {
     justify-content: center;
     padding: 120px;
-    margin: none;
+    margin: 0;
     font-size: 110px;
     background-image: url(img/imagedots.svg);
     background-position: bottom right;
