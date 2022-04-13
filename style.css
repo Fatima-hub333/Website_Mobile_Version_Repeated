@@ -41,11 +41,6 @@ button:disabled {
   background: #f4f1f0;
 }
 
-textarea:focus,
-input:focus {
-  outline: none;
-}
-
 /* End Global Styling */
 
 /* Navbar css */
@@ -101,6 +96,7 @@ input:focus {
   font-size: 20px;
   color: #000;
 }
+
 @media screen and (min-width: 768px) {
   .mob_ver_menubar {
     display: none;
@@ -113,6 +109,7 @@ input:focus {
   .menu {
     display: none;
   }
+
   .desktop-menu {
     display: flex;
     column-gap: 40px;
@@ -207,12 +204,6 @@ p {
 .intro-button:hover {
   background-color: #fff;
   color: #1a2236;
-}
-
-button:active {
-  background-color: #fff;
-  box-shadow: 0 2px #999;
-  transform: translateY(5px);
 }
 
 .end-intro-section {
@@ -700,7 +691,7 @@ h3 {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #1A2236;
+  color: #1a2236;
   margin: 12px;
 }
 
@@ -717,10 +708,10 @@ h3 {
   align-items: center;
   width: 246px;
   height: 51px;
-  border: 1px solid #1A2236;
+  border: 1px solid #1a2236;
   background-color: #1a2236;
   color: #fff;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -968,12 +959,20 @@ input:hover {
   border: 1px solid #1a2236;
 }
 
+input:focus {
+  outline: none;
+}
+
 textarea {
   padding: 10px;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   width: 100%;
   height: 112px;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 textarea:hover {
@@ -998,16 +997,6 @@ label {
 #mail,
 #message {
   margin-top: 15px;
-}
-
-input:hover,
-textarea:hover {
-  border: 1px solid #1a2236;
-}
-
-input:focus,
-textarea:focus {
-  border: 2px solid #1a2236;
 }
 
 .form-button {
