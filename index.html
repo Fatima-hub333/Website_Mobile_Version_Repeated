@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,11 +114,11 @@
       <h1>Get Started</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </section>
-    <form action="https://formspree.io/f/xgedlyrb " method="post">
+    <form action="https://formspree.io/f/xoqrnwzb" method="POST" id="contact">
       <ul class="submitform">
         <li class="nameform">
           <label for="first_name"> Your Name</label>
-          <input type="text" id="first_name" name="user_name" maxlength="30" placeholder="First name, Last name" required>
+          <input type="text" id="first_name" name="user_name" maxlength="30" placeholder="First name" required>
         </li>
         <li class="mailform">
           <label for="mail"> Your Email</label>
@@ -129,9 +129,10 @@
           <textarea aria-label="message" maxlength="500" required></textarea>
         </li>
         <li>
-          <button type="submit" class="contact-button">Start collaboration</button>
+          <button type="submit" class="contact-button" id="submitbtn">Submit</button>
         </li>
       </ul>
+      <p id="error-message"> kindly enter your mail in lower case</p>
     </form>
   </section>
   <footer class="links">
