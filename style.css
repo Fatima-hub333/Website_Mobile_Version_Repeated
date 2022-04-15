@@ -954,6 +954,15 @@ textarea:hover {
   color: #1a2236;
 }
 
+#error-message {
+  display: none;
+  text-align: center;
+  color: #e2505c;
+  font-size: 14px;
+  margin-top: -50px;
+  margin-bottom: 29px;
+}
+
 /* Contact-form Desktop Section CSS */
 
 @media (min-width: 768px) {
