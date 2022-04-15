@@ -94,6 +94,7 @@ popupExitButton.addEventListener('click', () => {
 });
 
 const contForm = document.getElementById('contact');
+console.log(contForm);
 const emailForm = document.getElementById('mail');
 const errorMessage = document.getElementById('error-message');
 
